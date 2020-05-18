@@ -1,26 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HomeComponent from './assets/Components/HomeComponent./SideContainerComp';
+import SideContainerComp from './assets/Components/HomeComponent./SideContainerComp';
+import './assets/Components/myStyles.css'
+import InboxContainerComp from './assets/Components/HomeComponent./InboxContainerComp';
+import ContactContainerComp from './assets/Components/HomeComponent./ContactContainerComp';
+import MessageContainerComp from './assets/Components/HomeComponent./MessageContainerComp';
+import ProfileContainerComp from './assets/Components/HomeComponent./ProfileContainerComp';
+
+
+const height = {
+  height: '100%'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="home-section">
+        <SideContainerComp />
+        <InboxContainerComp />
+        <ContactContainerComp />
+        <MessageContainerComp />
+        <ProfileContainerComp />
+      </section>
+
+
     </div>
-  );
+  )
 }
 
 export default App;

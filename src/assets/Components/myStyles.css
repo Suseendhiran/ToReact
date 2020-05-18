@@ -1,0 +1,21 @@
+.home-section 
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+.side-container 
+{
+    height: 100%;
+    width:80px;
+    background: #262323;
+}
+img
+{
+                width:25px;
+                height:25px;
+}
+li
+{
+    list-style: none;
+}
