@@ -4,6 +4,9 @@
     height: 100%;
     /* background-color: cyan; */
   }
+.MessageBoxProfileWrapper{
+    flex-direction: row;
+}
 
 .home-section 
 {
@@ -193,7 +196,7 @@
     {
         background: #433c3c;
     }
-    .contact-list-sep
+    #contact-list-sep
     {
         display: flex;
        flex-direction: row;
@@ -605,6 +608,336 @@
 .profileWidth{
     width:465px
 }
+@media only screen and (max-width: 600px)
+{
+    
+
+    .side-container{
+        
+        width: 90px;
+        
+        
+        ul{
+            li{
+                
+                text-align: center;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-top: 8px;
+                
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .inbox-container{
+        display: none;
+    }
+    .right-container{
+        display: none;
+    }
+    .contact-container{
+        width: 250px;
+        .contact-list-sep
+        {
+            
+            padding: 0px 5px;
+            
+            .contact-description{
+                padding: 5px 5px;
+            h5{
+                font-size: 10px;
+            }
+            p{
+                display: none;
+            }    
+        }
+        
+        }
+    }
+    .message-container
+    {
+        width: 320px;
+        
+        h2{
+            font-size: 0.8em;
+        }
+        .movie{
+            .spidey-image{
+                img{
+                height: 112px;
+        width: 197px !important;
+                }
+            }
+        }
+        .image-message
+        {
+        
+        
+        .btn-secondary
+        {
+            padding-left: 70px !important;
+            padding-right: 70px !important;
+        }
+        }
+        .message-typebox{
+            
+                margin-top: 90px;
+                img
+            { 
+        padding: 5px;
+        height: 40px;
+        width: 40px;
+            }
+            
+            .emoji
+            {
+                display: none;
+            }
+        }
+        .message-wrapper{
+            .content-wrapper{
+                padding:  0.5em !important;;
+            }
+        }
+        
+
+
+    }
+}
+
+@media only screen and (max-width: 360px)
+{
+    .combine{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-container{
+        width: 28%;
+        .contact-header{
+            height: 66px;
+        }
+        .form-group{
+            padding-left: 3px;
+            padding-right: 2px;
+        }
+        .conatct-action
+        {
+            display: none !important;
+        }
+    }
+    .message-container{
+        width: 69%;
+        .main-contact{
+            height: 66px;
+            h2{
+                padding: 25px 0px 0px 23px;
+            }
+            .image-flex{
+                padding: 22px 2px 10px 10px;
+            }
+        }
+        .profile-icon{
+            display: none !important;
+        }
+        
+        .main-message-content{
+        &:before  {
+            content: "\a";
+            
+            border-style: solid;
+            border-width: 10px 8px 2px 0px !important;
+            border-color: transparent #ffffff transparent transparent;
+            position: absolute;
+            left: -6px;
+            top: 1px !important;
+            
+        }   
+        }
+        .movie{
+            .spidey-image{
+            img{
+                height: 112px;
+    width: 172px !important;
+            }
+        }
+        }
+    }
+    
+    .home-section{
+        display: flex;
+        flex-direction: column;
+        img{
+            float: right;
+        }
+    .side-container{
+        width: 100%;
+        margin-bottom: 0px;
+        ul
+        {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+        li:first-child{
+            display: none;
+            
+        }
+        li{
+            display: block;
+ color: white;
+ text-align: center;
+ padding: 16px;
+ text-decoration: none;
+        }
+        }
+        
+    }
+    }
+   
+}
+@media only screen and (max-width: 411px)
+{
+    .combine{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-container{
+        width: 28%;
+        .contact-header{
+            height: 66px;
+        }
+        .form-group{
+            padding-left: 3px;
+            padding-right: 2px;
+        }
+        .conatct-action
+        {
+            display: none !important;
+        }
+    }
+    .message-container{
+        width: 72%;
+        .message-typebox
+    {
+        margin-top: 74px !important;
+        padding: 11px;
+        height: 73px;
+    }
+        .main-contact{
+            height: 66px;
+            h2{
+                padding: 25px 0px 0px 23px;
+            }
+            .image-flex{
+                padding: 22px 2px 10px 10px;
+            }
+        }
+        
+        
+        .main-message-content{
+        &:before  {
+            content: "\a";
+            
+            border-style: solid;
+            border-width: 10px 8px 2px 0px !important;
+            border-color: transparent #ffffff transparent transparent;
+            position: absolute;
+            left: -6px;
+            top: 1px !important;
+            
+        }   
+        }
+        .movie{
+            .spidey-image{
+            img{
+                height: 112px;
+    width: 172px !important;
+            }
+        }
+        }
+    }
+    
+    .home-section{
+        display: flex;
+        flex-direction: column;
+        img{
+            float: right;
+        }
+    .side-container
+    {
+        width: 100%;
+        margin-bottom: 0px;
+        ul
+        {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+        li:first-child
+        {
+            display: none;
+            
+        }
+        li
+        {
+            display: block;
+ color: white;
+ text-align: center;
+ padding: 16px;
+ text-decoration: none;
+        }
+        }
+        
+    }
+    }
+}
+@media only screen and (max-width: 320px)
+{
+.home-section{
+    width:100%;
+    
+.message-container
+    {
+    .btn-secondary
+    {
+        padding-left: 53px !important;
+            padding-right: 53px !important;
+    }
+    .message-typebox{
+        margin-top: 0px !important;
+        img{
+            
+    height: 40px;
+    width: 40px;
+        }
+        .typebox input{
+            padding-top: 5px;
+            padding-left: 5px;
+            width:90%
+        }
+        .entericon{
+            .btn-secondary{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    }
+    }
+    .movie
+    {
+        .spidey-image
+        {
+            img
+            {
+            height: 72px !important;
+            width: 135px !important;
+            }
+        }
+    }
+}
+}
+}
+
 
 
 

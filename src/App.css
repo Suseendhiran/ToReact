@@ -1,6 +1,15 @@
+:root {
+  overflow-x: hidden;
+  height: 100%;
+}
 .App {
   text-align: center;
+  height: 100% !important;
   height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -24,6 +33,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.container{
+  height: 100%;
+  position: absolute;
+  right: 100px;
+  left: 100px;
+  width: 150%;
+  align-items: center;
+  overflow: hidden;
 }
 
 .App-link {

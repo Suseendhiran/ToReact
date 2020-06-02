@@ -1,32 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HomeComponent from './assets/Components/HomeComponent./SideContainerComp';
 import SideContainerComp from './assets/Components/HomeComponent./SideContainerComp';
-import './assets/Components/myStyles.css'
+import './assets/Components/myStyles.css';
 import InboxContainerComp from './assets/Components/HomeComponent./InboxContainerComp';
 import ContactContainerComp from './assets/Components/HomeComponent./ContactContainerComp';
-import MessageContainerComp from './assets/Components/HomeComponent./MessageContainerComp';
-import ProfileContainerComp from './assets/Components/HomeComponent./ProfileContainerComp';
+import LoginComponent from './assets/Components/LoginComponents/LoginComponent';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MainHome from './assets/Components/HomeComponent./MainHome';
+import LoginfunComp from './assets/Components/LoginComponents/LoginfunComp';
 
-
-const height = {
-  height: '100%'
-}
 
 function App() {
+
+  let noError = true;
   return (
-    <div className="App">
-      <section className="home-section">
-        <SideContainerComp />
-        <InboxContainerComp />
-        <ContactContainerComp />
-        <MessageContainerComp />
-        <ProfileContainerComp />
-      </section>
+    <Router>
+      <div className="App">
 
+        {noError && <Route path="/home" exact component={MainHome} />}
+        <Route path="/" exact component={LoginfunComp} />
 
-    </div>
+      </div>
+    </Router>
   )
 }
 
